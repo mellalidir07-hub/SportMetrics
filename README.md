@@ -24,15 +24,14 @@ Ce projet utilise une stack data moderne et scalable :
 
 Le dépôt est structuré de manière modulaire pour refléter les différentes briques de l'architecture ELT :
 
-/SportMetrics/
-├── /etl_n8n/           <-- Export JSON du workflow d'ingestion automatisé.
-├── /dbt_project/       <-- Code source complet du projet dbt Cloud (modèles SQL, sources, schéma sémantique).
-├── /airflow_dags/     <-- Fichier Python définissant le DAG d'orchestration (chaîne de dépendances).
-├── /notebooks_ml/     <-- Notebooks Jupyter pour l'entraînement, le tuning et l'évaluation des 5 modèles d'IA.
-├── /powerbi/           <-- Fichier de projet Power BI (.pbix).
-├── .gitignore          <-- Fichier CRUCIAL excluant les fichiers inutiles ou sensibles.
-└── README.md           <-- Ce fichier, vitrine du projet.
-
+`/SportMetrics/`
+* `/etl_n8n/` : Export JSON du workflow d'ingestion automatisé.
+* `/dbt_project/` : Code source complet du projet dbt Cloud (modèles SQL, sources, schéma sémantique).
+* `/airflow_dags/` : Fichier Python définissant le DAG d'orchestration (chaîne de dépendances).
+* `/notebooks_ml/` : Notebooks Jupyter pour l'entraînement, le tuning et l'évaluation des 5 modèles d'IA.
+* `/powerbi/` : Fichier de projet Power BI (.pbix).
+* `.gitignore` : Fichier CRUCIAL excluant les fichiers inutiles ou sensibles.
+* `README.md`: Ce fichier, vitrine du projet.
 
 ## 4. Résultats Clés & Impact Business 🚀
 
