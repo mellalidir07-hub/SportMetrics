@@ -25,6 +25,7 @@ Ce projet utilise une stack data moderne et scalable :
 Le dépôt est structuré de manière modulaire pour refléter les différentes briques de l'architecture ELT :
 
 `/SportMetrics/`
+* `/data_source/` : Fichiers CSV des données brutes.
 * `/etl_n8n/` : Export JSON du workflow d'ingestion automatisé.
 * `/dbt_project/` : Code source complet du projet dbt Cloud (modèles SQL, sources, schéma sémantique).
 * `/airflow_dags/` : Fichier Python définissant le DAG d'orchestration (chaîne de dépendances).
