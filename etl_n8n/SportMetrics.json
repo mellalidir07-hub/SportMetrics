@@ -1,0 +1,899 @@
+{
+  "name": "SportMetrics",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "50e27a5c-e779-4565-8d17-0255c367ea4c",
+        "options": {}
+      },
+      "id": "942df1e6-6355-43c4-8ac7-1b0d9f539e91",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [
+        -740,
+        1320
+      ],
+      "webhookId": "50e27a5c-e779-4565-8d17-0255c367ea4c"
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "Session_ID",
+              "field2": "Session_ID"
+            }
+          ]
+        },
+        "resolve": "preferInput2",
+        "fuzzyCompare": true,
+        "options": {}
+      },
+      "id": "53a9445d-c78c-4e1d-a725-f76b90a5cc42",
+      "name": "Compare Datasets3",
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 2.3,
+      "position": [
+        1200,
+        1300
+      ]
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "GAME_ID",
+              "field2": "GAME_ID"
+            },
+            {
+              "field1": "PLAYER_ID",
+              "field2": "PLAYER_ID"
+            }
+          ]
+        },
+        "resolve": "preferInput2",
+        "fuzzyCompare": true,
+        "options": {}
+      },
+      "id": "462299a2-ebdf-4071-b304-453136e98a6b",
+      "name": "Compare Datasets4",
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 2.3,
+      "position": [
+        1200,
+        1680
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1nFfUJPBWGL_Fv8jDWetJEEevkCxPFwsgpMxpo96c7Yg",
+          "mode": "list",
+          "cachedResultName": "team_boxscores",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1nFfUJPBWGL_Fv8jDWetJEEevkCxPFwsgpMxpo96c7Yg/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 444542102,
+          "mode": "list",
+          "cachedResultName": "team_boxscores",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1nFfUJPBWGL_Fv8jDWetJEEevkCxPFwsgpMxpo96c7Yg/edit#gid=444542102"
+        },
+        "options": {}
+      },
+      "id": "192676b8-67cb-4018-a0f8-18c5a4b77066",
+      "name": "Read team_boxscores CSV",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.2,
+      "position": [
+        580,
+        1040
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1vU9oVVq7UWwObIXELenNO8Roq_U6CdJ_xxX4VEpqDz8",
+          "mode": "list",
+          "cachedResultName": "team_training_sessions",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1vU9oVVq7UWwObIXELenNO8Roq_U6CdJ_xxX4VEpqDz8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1155703840,
+          "mode": "list",
+          "cachedResultName": "team_training_sessions.csv",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1vU9oVVq7UWwObIXELenNO8Roq_U6CdJ_xxX4VEpqDz8/edit#gid=1155703840"
+        },
+        "options": {}
+      },
+      "id": "d43ba70e-d44d-487b-a5dd-e191b31d0271",
+      "name": "Read team_training_sessions CSV",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.2,
+      "position": [
+        580,
+        1400
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "10rEcyNOcb6RuxPGJ_4a6wixGAu9xKIpHuoMNW6JsSl8",
+          "mode": "list",
+          "cachedResultName": "team_players_stats",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/10rEcyNOcb6RuxPGJ_4a6wixGAu9xKIpHuoMNW6JsSl8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1284397652,
+          "mode": "list",
+          "cachedResultName": "team_players_stats",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/10rEcyNOcb6RuxPGJ_4a6wixGAu9xKIpHuoMNW6JsSl8/edit#gid=1284397652"
+        },
+        "options": {}
+      },
+      "id": "b1b242e0-3f35-4973-a7bc-1851ae11b955",
+      "name": "Read team_players_stats CSV",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.2,
+      "position": [
+        580,
+        1760
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1xoeJ3YaFFOQHFVvpJjMXMCdxbVcQ-39x6dAqd6X0k3M",
+          "mode": "list",
+          "cachedResultName": "team_games_dataset",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1xoeJ3YaFFOQHFVvpJjMXMCdxbVcQ-39x6dAqd6X0k3M/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1735803484,
+          "mode": "list",
+          "cachedResultName": "team_games_dataset",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1xoeJ3YaFFOQHFVvpJjMXMCdxbVcQ-39x6dAqd6X0k3M/edit#gid=1735803484"
+        },
+        "options": {}
+      },
+      "id": "79c3be90-37a8-4206-9ed5-a1d49928c515",
+      "name": "Read team_games_dataset CSV",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.2,
+      "position": [
+        580,
+        2120
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "115Odyo6D1Autp1RQ0EPUDED8Ft3P0WuZFhHjByfBQ4g",
+          "mode": "list",
+          "cachedResultName": "team_players_personal_info",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/115Odyo6D1Autp1RQ0EPUDED8Ft3P0WuZFhHjByfBQ4g/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1950512476,
+          "mode": "list",
+          "cachedResultName": "team_players_personal_info.csv",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/115Odyo6D1Autp1RQ0EPUDED8Ft3P0WuZFhHjByfBQ4g/edit#gid=1950512476"
+        },
+        "options": {}
+      },
+      "id": "80d991db-db78-4a82-a078-818af224c04d",
+      "name": "Read team_players_personal_info CSV",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.2,
+      "position": [
+        580,
+        680
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "sqlQuery": "SELECT PLAYER_ID\nFROM `project-a0475dd2-d0c1-4640-aea.Sport_Metrics.team_players_personal_info`",
+        "options": {}
+      },
+      "id": "f85fb286-59e3-4f5f-8225-c86f33ce8299",
+      "name": "Read Players Info table in BigQuery",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        580,
+        500
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "sqlQuery": "SELECT\n  Session_ID\nFROM\n  `project-a0475dd2-d0c1-4640-aea.Sport_Metrics.team_training_sessions`",
+        "options": {}
+      },
+      "id": "33692bdf-224e-4993-8493-9b6f203c8b79",
+      "name": "Read Training Sessions table in BigQuery",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        580,
+        1220
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "sqlQuery": "SELECT GAME_ID\nFROM `project-a0475dd2-d0c1-4640-aea.Sport_Metrics.team_boxscores`",
+        "options": {}
+      },
+      "id": "d6aa9e36-d986-4887-96b8-09ea5e521ca6",
+      "name": "Read Boxscores table in BigQuery",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        580,
+        860
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "sqlQuery": "SELECT *\nFROM\n  `project-a0475dd2-d0c1-4640-aea.Sport_Metrics.team_players_stats`;",
+        "options": {}
+      },
+      "id": "7d3cef9d-3b12-4ea3-bbd3-a458af9b2977",
+      "name": "Read Players Stats table in BigQuery",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        580,
+        1580
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "sqlQuery": "SELECT Game_ID\nFROM `project-a0475dd2-d0c1-4640-aea.Sport_Metrics.team_games_dataset`",
+        "options": {}
+      },
+      "id": "95e76a39-bbce-40d5-a5f8-689339283c32",
+      "name": "Read Games Dataset table in BigQuery",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        580,
+        1940
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "GAME_ID",
+              "field2": "GAME_ID"
+            }
+          ]
+        },
+        "resolve": "preferInput2",
+        "fuzzyCompare": true,
+        "options": {}
+      },
+      "id": "431388c4-d063-40b1-8205-d72cd06cd3ca",
+      "name": "Compare Datasets2",
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 2.3,
+      "position": [
+        1200,
+        940
+      ]
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "Game_ID",
+              "field2": "Game_ID"
+            }
+          ]
+        },
+        "resolve": "preferInput2",
+        "fuzzyCompare": true,
+        "options": {}
+      },
+      "id": "aa567347-8d69-4886-b01f-5e0337455aa8",
+      "name": "Compare Datasets5",
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 2.3,
+      "position": [
+        1200,
+        2040
+      ]
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "PLAYER_ID",
+              "field2": "PLAYER_ID"
+            }
+          ]
+        },
+        "resolve": "preferInput2",
+        "fuzzyCompare": true,
+        "options": {}
+      },
+      "id": "16f2a2c5-db8a-47cb-8521-bbc32228f96a",
+      "name": "Compare Datasets1",
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 2.3,
+      "position": [
+        1200,
+        600
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "insert",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "datasetId": {
+          "__rl": true,
+          "value": "Sport_Metrics",
+          "mode": "list",
+          "cachedResultName": "Sport_Metrics"
+        },
+        "tableId": {
+          "__rl": true,
+          "value": "team_players_personal_info",
+          "mode": "list",
+          "cachedResultName": "team_players_personal_info"
+        },
+        "options": {}
+      },
+      "id": "3d1ea030-1aae-47c9-93a2-d7eadefcae07",
+      "name": "Google BigQuery Players Info",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        1840,
+        620
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "insert",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "datasetId": {
+          "__rl": true,
+          "value": "Sport_Metrics",
+          "mode": "list",
+          "cachedResultName": "Sport_Metrics"
+        },
+        "tableId": {
+          "__rl": true,
+          "value": "team_boxscores",
+          "mode": "list",
+          "cachedResultName": "team_boxscores"
+        },
+        "options": {}
+      },
+      "id": "f36347d2-99a2-4992-8500-2f75c9742f15",
+      "name": "Google BiqQuery Boxscores",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        1840,
+        960
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "insert",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "datasetId": {
+          "__rl": true,
+          "value": "Sport_Metrics",
+          "mode": "list",
+          "cachedResultName": "Sport_Metrics"
+        },
+        "tableId": {
+          "__rl": true,
+          "value": "team_training_sessions",
+          "mode": "list",
+          "cachedResultName": "team_training_sessions"
+        },
+        "options": {}
+      },
+      "id": "5f07046a-93f0-4c6d-84ec-a6b482dfc4ba",
+      "name": "Google BigQuery Training Sessions",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        1840,
+        1340
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "insert",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "datasetId": {
+          "__rl": true,
+          "value": "Sport_Metrics",
+          "mode": "list",
+          "cachedResultName": "Sport_Metrics"
+        },
+        "tableId": {
+          "__rl": true,
+          "value": "team_players_stats",
+          "mode": "list",
+          "cachedResultName": "team_players_stats"
+        },
+        "options": {}
+      },
+      "id": "bd30a9cf-b8e5-453a-bcfc-bd91efdb072d",
+      "name": "Google BigQuery Players Stats",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        1840,
+        1700
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "insert",
+        "projectId": {
+          "__rl": true,
+          "value": "project-a0475dd2-d0c1-4640-aea",
+          "mode": "list",
+          "cachedResultName": "My First Project",
+          "cachedResultUrl": "https://console.cloud.google.com/bigquery?project=project-a0475dd2-d0c1-4640-aea"
+        },
+        "datasetId": {
+          "__rl": true,
+          "value": "Sport_Metrics",
+          "mode": "list",
+          "cachedResultName": "Sport_Metrics"
+        },
+        "tableId": {
+          "__rl": true,
+          "value": "team_games_dataset",
+          "mode": "list",
+          "cachedResultName": "team_games_dataset"
+        },
+        "options": {}
+      },
+      "id": "b4434bd8-06de-4bde-a575-94000f76292b",
+      "name": "Google BigQuery Games Dataset",
+      "type": "n8n-nodes-base.googleBigQuery",
+      "typeVersion": 2,
+      "position": [
+        1840,
+        2060
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "ochTXq2PGYKnrobj",
+          "name": "Google BigQuery account 23"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Compare Datasets4": {
+      "main": [
+        [],
+        [],
+        [],
+        [
+          {
+            "node": "Google BigQuery Players Stats",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare Datasets3": {
+      "main": [
+        [],
+        [],
+        [],
+        [
+          {
+            "node": "Google BigQuery Training Sessions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Read Players Info table in BigQuery",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read team_players_personal_info CSV",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Boxscores table in BigQuery",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read team_boxscores CSV",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Training Sessions table in BigQuery",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read team_training_sessions CSV",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Games Dataset table in BigQuery",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Players Stats table in BigQuery",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read team_players_stats CSV",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read team_games_dataset CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read team_boxscores CSV": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets2",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Read team_training_sessions CSV": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets3",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Read team_players_stats CSV": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets4",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Read team_games_dataset CSV": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets5",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Read team_players_personal_info CSV": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Read Players Info table in BigQuery": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Training Sessions table in BigQuery": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Boxscores table in BigQuery": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Players Stats table in BigQuery": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Games Dataset table in BigQuery": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare Datasets2": {
+      "main": [
+        [],
+        [],
+        [],
+        [
+          {
+            "node": "Google BiqQuery Boxscores",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare Datasets5": {
+      "main": [
+        [],
+        [],
+        [],
+        [
+          {
+            "node": "Google BigQuery Games Dataset",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare Datasets1": {
+      "main": [
+        [],
+        [],
+        [],
+        [
+          {
+            "node": "Google BigQuery Players Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "67b26a7d-dac7-4930-b4b9-b5a029fc706a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "6e22ded6e67a214fd2bfddb6ad54af28d04c7a533f6a00ee257b5bd96c9f2ad4"
+  },
+  "id": "5XRjBgHbdZmMhpVz",
+  "tags": []
+}

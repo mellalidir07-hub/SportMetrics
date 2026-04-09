@@ -1,0 +1,61 @@
+PLAYER_ID,PLAYER_NAME,FIRST_NAME,LAST_NAME,DISPLAY_FIRST_LAST,BIRTHDATE,SCHOOL,COUNTRY,HEIGHT,WEIGHT,SEASON_EXP,JERSEY,POSITION,ROSTER_STATUS,FROM_YEAR,TO_YEAR,DRAFT_YEAR,DRAFT_ROUND,DRAFT_NUMBER,HEIGHT_CM,WEIGHT_KG,AGE
+1687691235,Lucas Dubois,Lucas,Dubois,Lucas Dubois,1999-03-17 00:00:00,Institut Formation Basket,France,6-6,220.0,6,3.0,Forward-Guard,Inactive,2019.0,2025.0,2021,1,18,198.1,99.8,25
+1652212853,Marko Petrovic,Marko,Petrovic,Marko Petrovic,2000-11-12 00:00:00,Academy Toulouse,Serbie,6-10,227.0,5,19.0,Forward,Inactive,2019.0,2023.0,2021,1,14,208.3,103.0,24
+1683761184,Johann Müller,Johann,Müller,Johann Müller,1995-03-28 00:00:00,Academy Bordeaux,Allemagne,7-0,253.0,9,19.0,Center,Inactive,2016.0,2025.0,2018,1,1,213.4,114.8,29
+1679581927,Mamadou Diallo,Mamadou,Diallo,Mamadou Diallo,1998-04-15 00:00:00,INSEP Paris,Sénégal,6-4,204.0,8,16.0,Guard-Forward,Inactive,2018.0,2024.0,2017,1,21,193.0,92.5,25
+1684823847,Yanis Belkacem,Yanis,Belkacem,Yanis Belkacem,1996-09-19 00:00:00,INSEP Paris,France,6-4,180.0,9,5.0,Guard,Inactive,2016.0,2025.0,2015,1,20,193.0,81.6,28
+1654357913,Matteo Rossi,Matteo,Rossi,Matteo Rossi,1986-01-07 00:00:00,Academy Lyon,Italie,6-5,220.0,14,18.0,Guard,Inactive,2007.0,2019.0,2010,1,3,195.6,99.8,38
+1695759817,Amadou Koné,Amadou,Koné,Amadou Koné,1996-09-25 00:00:00,Academy Lyon,Côte d'Ivoire,6-3,205.0,4,15.0,Guard,Inactive,2019.0,2021.0,2022,2,31,190.5,93.0,28
+1699353056,Alexandre Fontaine,Alexandre,Fontaine,Alexandre Fontaine,1997-08-26 00:00:00,Academy Lille,France,6-10,245.0,7,19.0,Forward-Center,Inactive,2018.0,2025.0,Undrafted,Undrafted,Undrafted,208.3,111.1,27
+1660724909,Ibrahim Traoré,Ibrahim,Traoré,Ibrahim Traoré,1997-02-10 00:00:00,Institut Formation Basket,Mali,6-10,225.0,7,4.0,Forward-Center,Inactive,2018.0,2023.0,2018,2,35,208.3,102.1,27
+1652570497,Malik Ouattara,Malik,Ouattara,Malik Ouattara,1989-10-01 00:00:00,Centre de Formation Paris,Burkina Faso,6-6,220.0,16,10.0,Guard-Forward,Inactive,2009.0,2025.0,2010,1,14,198.1,99.8,35
+1697425574,Souleymane Diarra,Souleymane,Diarra,Souleymane Diarra,1986-05-26 00:00:00,Academy Bordeaux,Sénégal,6-8,250.0,18,22.0,Forward-Guard,Inactive,2006.0,2022.0,2008,1,26,203.2,113.4,38
+1657985451,Pierre Martin,Pierre,Martin,Pierre Martin,1988-10-27 00:00:00,Academy Lille,France,6-2,180.0,17,88.0,Guard,Inactive,2009.0,2024.0,2008,2,54,188.0,81.6,36
+1685968729,Thomas Leblanc,Thomas,Leblanc,Thomas Leblanc,1994-10-05 00:00:00,Academy Strasbourg,France,6-4,190.0,8,9.0,Guard,Inactive,2017.0,2025.0,2016,1,13,193.0,86.2,30
+1682393378,Maxime Lefebvre,Maxime,Lefebvre,Maxime Lefebvre,1990-05-22 00:00:00,Academy Montpellier,Belgique,6-11,250.0,9,40.0,Forward-Center,Inactive,2012.0,2019.0,2012,1,17,210.8,113.4,34
+1668139015,Jean-Baptiste Moreau,Jean-Baptiste,Moreau,Jean-Baptiste Moreau,1985-09-13 00:00:00,Institut Formation Basket,France,6-11,250.0,17,21.0,Center-Forward,Inactive,2006.0,2021.0,2007,1,4,210.8,113.4,39
+1681114057,Abdoulaye Ba,Abdoulaye,Ba,Abdoulaye Ba,1995-06-07 00:00:00,Academy Nantes,Sénégal,6-9,234.0,11,41.0,Forward,Inactive,2015.0,2024.0,2014,1,14,205.7,106.1,29
+1679015727,Bryan Fournier,Bryan,Fournier,Bryan Fournier,1993-10-16 00:00:00,INSEP Paris,Canada,6-2,205.0,7,,Guard,Inactive,2016.0,2022.0,Undrafted,Undrafted,Undrafted,188.0,93.0,31
+1683305932,Youssef Bouchareb,Youssef,Bouchareb,Youssef Bouchareb,1986-03-13 00:00:00,Centre Fédéral,Maroc,6-6,215.0,12,9.0,Forward,Inactive,2009.0,2019.0,2007,1,4,198.1,97.5,38
+1659116774,Kevin Rousseau,Kevin,Rousseau,Kevin Rousseau,2000-10-15 00:00:00,Academy Bordeaux,France,6-5,200.0,5,24.0,Guard-Forward,Inactive,2020.0,2025.0,2021,1,15,195.6,90.7,24
+1693743352,Théo Garnier,Théo,Garnier,Théo Garnier,2000-02-04 00:00:00,Academy Montpellier,France,6-1,185.0,5,30.0,Guard,Inactive,2020.0,2025.0,2017,2,36,185.4,83.9,24
+1678858904,Moussa Ndiaye,Moussa,Ndiaye,Moussa Ndiaye,1990-11-27 00:00:00,Centre National d'Entraînement,Sénégal,6-10,248.0,11,41.0,Center,Inactive,2013.0,2022.0,2015,1,3,208.3,112.5,34
+1697331567,Karim Benhamed,Karim,Benhamed,Karim Benhamed,1996-08-12 00:00:00,Academy Bordeaux,Tunisie,6-8,229.0,7,13.0,Forward,Inactive,2018.0,2023.0,2018,2,34,203.2,103.9,28
+1675602728,Camille Renaud,Camille,Renaud,Camille Renaud,1995-12-27 00:00:00,Academy Bordeaux,France,6-7,225.0,2,,Forward,Inactive,2018.0,2020.0,Undrafted,Undrafted,Undrafted,200.7,102.1,29
+1665766289,Josué Mercier,Josué,Mercier,Josué Mercier,2002-03-06 00:00:00,Institut National du Sport,France,6-4,189.0,4,,Guard,Inactive,2021.0,2023.0,2020,1,5,193.0,85.7,21
+1662443797,Jordan Lemieux,Jordan,Lemieux,Jordan Lemieux,1993-11-21 00:00:00,Academy Marseille,Canada,6-5,200.0,9,,Guard,Inactive,2015.0,2024.0,2013,2,53,195.6,90.7,31
+1664883672,Zacharie Dupont,Zacharie,Dupont,Zacharie Dupont,1997-10-15 00:00:00,Academy Marseille,France,6-9,250.0,8,12.0,Forward-Center,Inactive,2017.0,2025.0,2018,1,9,205.7,113.4,27
+1689725180,Johan Vidal,Johan,Vidal,Johan Vidal,1999-01-02 00:00:00,INSEP Paris,Espagne,6-6,205.0,3,11.0,Guard-Forward,Inactive,2021.0,2022.0,2021,2,43,198.1,93.0,25
+1691433282,Jacques Bonnet,Jacques,Bonnet,Jacques Bonnet,1995-03-17 00:00:00,Academy Montpellier,France,6-11,255.0,4,31.0,Center,Inactive,2021.0,2025.0,Undrafted,Undrafted,Undrafted,210.8,115.7,29
+1653410118,Devon Césaire,Devon,Césaire,Devon Césaire,1996-04-25 00:00:00,Pôle Espoir Basket,Guadeloupe,6-7,240.0,4,18.0,Forward,Inactive,2019.0,2021.0,Undrafted,Undrafted,Undrafted,200.7,108.9,28
+1661901952,Roméo Delorme,Roméo,Delorme,Roméo Delorme,1999-12-27 00:00:00,Institut Formation Basket,France,6-5,216.0,5,35.0,Guard-Forward,Inactive,2019.0,2022.0,2016,1,18,195.6,98.0,25
+1659106517,David-Junior Sanogo,David-Junior,Sanogo,David-Junior Sanogo,1999-11-28 00:00:00,Centre de Formation Paris,Cameroun,6-5,205.0,1,18.0,Guard,Inactive,2021.0,2021.0,Undrafted,Undrafted,Undrafted,195.6,93.0,25
+1683172720,Robert Durand,Robert,Durand,Robert Durand,1999-06-18 00:00:00,Centre de Formation Nice,France,6-6,235.0,3,28.0,Forward,Inactive,2020.0,2021.0,2019,2,58,198.1,106.6,25
+1655322242,Douglas Hermans,Douglas,Hermans,Douglas Hermans,1992-08-07 00:00:00,Academy Nantes,Belgique,6-7,225.0,11,7.0,Forward,Inactive,2014.0,2025.0,2017,1,12,200.7,102.1,32
+1675225241,Tomáš Novák,Tomáš,Novák,Tomáš Novák,1991-02-14 00:00:00,Pôle France Basket,République Tchèque,6-7,210.0,7,31.0,Guard,Inactive,2016.0,2021.0,2011,2,50,200.7,95.3,33
+1698007668,Théodore Youssef,Théodore,Youssef,Théodore Youssef,1988-02-01 00:00:00,Centre Fédéral,Algérie,6-8,225.0,18,30.0,Forward,Inactive,2007.0,2023.0,2006,1,16,203.2,102.1,36
+1696062940,Juan Garcia,Juan,Garcia,Juan Garcia,1995-12-26 00:00:00,Centre National d'Entraînement,Espagne,6-9,214.0,7,,Forward,Inactive,2016.0,2022.0,2016,1,30,205.7,97.1,29
+1695604421,Tyler Andersson,Tyler,Andersson,Tyler Andersson,1992-09-04 00:00:00,Academy Lille,Suède,6-3,186.0,8,,Guard,Inactive,2014.0,2021.0,Undrafted,Undrafted,Undrafted,190.5,84.4,32
+1676106588,Antoine Girard,Antoine,Girard,Antoine Girard,1998-06-05 00:00:00,Academy Toulouse,France,6-6,227.0,4,40.0,Forward,Inactive,2020.0,2022.0,Undrafted,Undrafted,Undrafted,198.1,103.0,26
+1679027445,Jamal Touré,Jamal,Touré,Jamal Touré,1995-04-16 00:00:00,Academy Montpellier,France,6-5,185.0,3,,Guard,Inactive,2017.0,2021.0,Undrafted,Undrafted,Undrafted,195.6,83.9,29
+1686105743,Julien Leroux,Julien,Leroux,Julien Leroux,2001-11-05 00:00:00,Centre de Formation Nice,France,6-7,217.0,3,30.0,Forward,Inactive,2022.0,2025.0,Undrafted,Undrafted,Undrafted,200.7,98.4,23
+1677279668,Sandro Matkava,Sandro,Matkava,Sandro Matkava,1999-01-13 00:00:00,Centre National d'Entraînement,Géorgie,6-9,240.0,4,54.0,Forward-Center,Inactive,2021.0,2025.0,2018,2,51,205.7,108.9,25
+1660138482,Malik Benali,Malik,Benali,Malik Benali,2003-08-26 00:00:00,Centre National d'Entraînement,France,6-4,180.0,3,8.0,Forward,Inactive,2022.0,2025.0,2020,1,9,193.0,81.6,21
+1689882668,Blaise Schneider,Blaise,Schneider,Blaise Schneider,2003-01-22 00:00:00,Institut National du Sport,Suisse,6-4,190.0,3,1.0,Guard,Inactive,2022.0,2025.0,2023,1,26,193.0,86.2,21
+1662535822,Dominique Faure,Dominique,Faure,Dominique Faure,2003-11-19 00:00:00,Academy Strasbourg,France,6-9,215.0,3,25.0,Forward,Inactive,2022.0,2025.0,Undrafted,Undrafted,Undrafted,205.7,97.5,21
+1691796009,Jérémie Kowalski,Jérémie,Kowalski,Jérémie Kowalski,2003-12-02 00:00:00,Academy Toulouse,Pologne,6-8,230.0,3,10.0,Forward,Inactive,2022.0,2025.0,2020,1,29,203.2,104.3,21
+1667808794,Devon Palmier,Devon,Palmier,Devon Palmier,1995-09-11 00:00:00,Institut Régional du Sport,Martinique,6-1,195.0,7,4.0,Guard,Inactive,2018.0,2023.0,2020,2,41,185.4,88.5,29
+1677942346,Charles Diouf,Charles,Diouf,Charles Diouf,2000-11-10 00:00:00,Institut National du Sport,Sénégal,6-10,230.0,4,,Center-Forward,Inactive,2021.0,2025.0,2024,2,54,208.3,104.3,24
+1676674721,Ismaël Sow,Ismaël,Sow,Ismaël Sow,1998-09-18 00:00:00,Academy Bordeaux,Sénégal,6-8,230.0,5,18.0,Forward,Inactive,2019.0,2022.0,2022,2,48,203.2,104.3,26
+1694988767,Stan Larsen,Stan,Larsen,Stan Larsen,1996-07-26 00:00:00,Academy Nantes,Norvège,6-6,242.0,8,,Forward-Guard,Inactive,2015.0,2022.0,2014,1,22,198.1,109.8,28
+1691443711,Alizé Keita,Alizé,Keita,Alizé Keita,1996-05-03 00:00:00,Academy Toulouse,Mali,6-8,212.0,6,,Forward,Inactive,2018.0,2022.0,2017,2,55,203.2,96.2,28
+1670278270,Jordan Haddad,Jordan,Haddad,Jordan Haddad,2002-10-13 00:00:00,Institut Régional du Sport,Liban,6-7,215.0,2,,Guard,Inactive,2022.0,2022.0,Undrafted,Undrafted,Undrafted,200.7,97.5,22
+1683395065,Sékou Kanté,Sékou,Kanté,Sékou Kanté,2004-09-23 00:00:00,Academy Toulouse,Mali,6-6,220.0,2,91.0,Guard,Inactive,2022.0,2025.0,2023,2,60,198.1,99.8,20
+1692954827,David Roussel,David,Roussel,David Roussel,1999-02-21 00:00:00,Institut National du Sport,France,6-4,204.0,5,7.0,Guard,Inactive,2021.0,2024.0,Undrafted,Undrafted,Undrafted,193.0,92.5,25
+1650696945,Jamil Azizi,Jamil,Azizi,Jamil Azizi,1999-09-01 00:00:00,Academy Marseille,Tunisie,6-2,180.0,3,15.0,Guard,Inactive,2022.0,2025.0,Undrafted,Undrafted,Undrafted,188.0,81.6,25
+1699106908,Raïs Gueye,Raïs,Gueye,Raïs Gueye,1999-09-27 00:00:00,Academy Nantes,Sénégal,6-7,269.0,3,0.0,Forward,Inactive,2022.0,2023.0,2018,2,54,200.7,122.0,25
+1658085736,Vincent Beaumont,Vincent,Beaumont,Vincent Beaumont,2004-04-24 00:00:00,Academy Toulouse,France,7-4,235.0,2,1.0,Forward-Center,Inactive,2023.0,2025.0,2021,1,19,223.5,106.6,20
+1669630158,Cédric Yilmaz,Cédric,Yilmaz,Cédric Yilmaz,1995-05-22 00:00:00,Academy Montpellier,Turquie,6-7,230.0,8,16.0,Forward,Inactive,2017.0,2023.0,2016,2,55,200.7,104.3,29
+1698204023,Mamady Condé,Mamady,Condé,Mamady Condé,1997-08-20 00:00:00,Academy Toulouse,Guinée,6-9,228.0,5,21.0,Forward,Inactive,2020.0,2023.0,Undrafted,Undrafted,Undrafted,205.7,103.4,27
+1662799211,Samir El Amrani,Samir,El Amrani,Samir El Amrani,1998-05-06 00:00:00,Academy Strasbourg,Maroc,,,0,,,Inactive,,,Undrafted,Undrafted,Undrafted,,,25
+1680514061,Charles Nkomo,Charles,Nkomo,Charles Nkomo,2002-12-25 00:00:00,Institut Formation Basket,Cameroun,,,0,,,Inactive,,,Undrafted,Undrafted,Undrafted,,,22
