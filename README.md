@@ -26,6 +26,7 @@ Le dépôt est structuré de manière modulaire pour refléter les différentes 
 
 `/SportMetrics/`
 * `/data_source/` : Fichiers CSV des données brutes.
+* `/architecture_model/` : Architecture du pipeline ELT et schémas de modélisation des données.
 * `/etl_n8n/` : Export JSON du workflow d'ingestion automatisé.
 * `/dbt_project/` : Code source complet du projet dbt Cloud (modèles SQL, sources, schéma sémantique).
 * `/airflow_dags/` : Fichier Python définissant le DAG d'orchestration (chaîne de dépendances).
